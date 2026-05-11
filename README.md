@@ -1,6 +1,5 @@
-Nama : Nadin Nabil Hafizh Ayyasy
-<p>
-NRP : 5025231061
+### Nama : Nadin Nabil Hafizh Ayyasy
+### NRP : 5025231061
 
 ## Penjelasan AI 
 1. Karena saya ikut GRS jadi saya pakai model yang sudah saya train yaitu deteksi pohon sawit 
