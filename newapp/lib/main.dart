@@ -1,30 +1,26 @@
 import 'package:flutter/material.dart';
+import 'screens/main_screen.dart';
 
 void main() {
-  runApp(
-    MaterialApp(
-      home: Scaffold(
-        appBar: AppBar(
-          backgroundColor: Colors.amber,
-          title: Text('Alvin Zanua Putra'),
-        ),
-        body: Center(
-          child: Text(
-            'Flutter intro',
-            style: TextStyle(
-              fontSize: 20,
-              fontWeight: FontWeight.bold,
-              letterSpacing: 3,
-              color: Colors.blueAccent,
-            ),
-          ),
-        ),
-        floatingActionButton: FloatingActionButton(
-          onPressed: () {},
-          backgroundColor: Colors.amber,
-          child: const Icon(Icons.add),
+  runApp(const MyApp());
+}
+
+class MyApp extends StatelessWidget {
+  const MyApp({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return MaterialApp(
+      title: 'YOLO Tree Detector',
+      theme: ThemeData.dark().copyWith(
+        primaryColor: Colors.teal,
+        colorScheme: const ColorScheme.dark(
+          primary: Colors.teal, 
+          secondary: Colors.greenAccent
         ),
       ),
-    ),
-  );
+      home: const MainScreen(),
+      debugShowCheckedModeBanner: false,
+    );
+  }
 }

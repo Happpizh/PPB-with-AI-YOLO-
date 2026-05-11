@@ -35,6 +35,10 @@ dependencies:
   # Use with the CupertinoIcons class for iOS style icons.
   cupertino_icons: ^1.0.8
 
+  # Tambahkan package di bawah ini
+  ultralytics_yolo: ^0.3.0
+  image_picker: ^1.0.7
+
 dev_dependencies:
   flutter_test:
     sdk: flutter
@@ -56,6 +60,10 @@ flutter:
   # included with your application, so that you can use the icons in
   # the material Icons class.
   uses-material-design: true
+
+  # Tambahkan section assets di sini
+  assets:
+    - assets/models/
 
   # To add assets to your application, add an assets section, like this:
   # assets:
@@ -87,3 +95,4 @@ flutter:
   #
   # For details regarding fonts from package dependencies,
   # see https://flutter.dev/to/font-from-package
+  # Tambahkan ini di bagian paling bawah file pubspec.yaml
